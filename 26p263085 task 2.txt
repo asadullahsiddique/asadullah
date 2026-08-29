@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main()
+{  
+   int batch=2026;
+   char section='A';
+   float testscore=82.75;
+   double semesterfee=216000.50;
+  printf("\tfast-nuces student profile card \n");
+ printf("=================================================\n");
+printf("batch :\t%d\n", batch);
+printf("section :\t%c\n",section);
+printf(" test score:\t%.2f\n", testscore);
+printf("semester fee:\tpkr%.2f\n", semesterfee);
+printf("motto:\t \"small daily steps lead to big success\" \n");
+printf("===================================================");
+ return 0;
+}
+

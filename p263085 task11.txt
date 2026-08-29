@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    
+    int teaQty = 3;
+    int samosaQty = 4;
+    int chickenRollQty = 2;
+    float teaPrice = 60.00;
+    float samosaPrice = 40.50;
+    float chickenRollPrice = 120.00;
+    float teaSubtotal;
+    float samosaSubtotal;
+    float chickenRollSubtotal;
+    float billSubtotal;
+    float gst;
+    float grandTotal;
+    teaSubtotal = teaQty * teaPrice;
+    samosaSubtotal = samosaQty * samosaPrice;
+    chickenRollSubtotal = chickenRollQty * chickenRollPrice;
+    billSubtotal = teaSubtotal + samosaSubtotal + chickenRollSubtotal;
+    gst = 0.16 * billSubtotal;
+    grandTotal = billSubtotal + gst;
+    printf("================== FAST CAFETERIA RECEIPT ==================\n");
+    printf("Item\t\tQty\tUnit Price (PKR)\tSubtotal (PKR)\n");
+    printf("------------------------------------------------------------\n");
+
+    printf("Tea\t\t%d\t%.2f\t\t\t%.2f\n",
+           teaQty, teaPrice, teaSubtotal);
+    printf("Samosa\t\t%d\t%.2f\t\t\t%.2f\n",
+           samosaQty, samosaPrice, samosaSubtotal);
+    printf("Chicken Roll\t%d\t%.2f\t\t\t%.2f\n",
+           chickenRollQty, chickenRollPrice, chickenRollSubtotal);
+    printf("------------------------------------------------------------\n");
+    printf("Subtotal: PKR %.2f\n", billSubtotal);
+    printf("GST (16%%): PKR %.2f\n", gst);
+    printf("------------------------------------------------------------\n");
+    printf("Grand Total: PKR %.2f\n", grandTotal);
+    printf("================= THANK YOU FOR YOUR VISIT =================\n");
+
+    return 0;
+}

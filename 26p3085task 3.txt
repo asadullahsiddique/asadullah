@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main()
+{  
+   printf("============= C ESCAPE SEQUENCE REFERENCE ==========\n");
+   printf("1. to print a double quote, write:        \\\"\n");
+   printf("2. to print a literal backslash, write:     \\\\\n");
+   printf("3. to insert a new line break, write:     \\n\n");
+   printf("4. to insert a horizental tab stop, write:    \\t\n");
+   printf("5. to print a percent sign, write:      %%%% \n");
+   printf("=========================================== \n");
+
+  return 0;
+
+}

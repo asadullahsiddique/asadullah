@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main ()
+{char b='m';
+   int a=109;
+   float c=3.141590;
+   double d=98.765432;
+   printf("type name \t\t variable name \t\t size in memory\n");
+   printf("----------------------------------------------------\n");
+   printf("char \t\t\t%c\t\t       \t\t 1 bytes(s)\n",b, sizeof(b));
+   printf("int \t\t\t%d\t\t     \t\t4 bytes(s)\n",b,sizeof(a));
+   printf("float \t\t\t%f\t\t   \t 4bytes(s)\n",c,sizeof(c));
+   printf("double \t\t\t%.5f\t\t     8 bytes(s)\n",d,sizeof(d));
+   return 0;
+}

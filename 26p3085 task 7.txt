@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main() {
+ 
+         float vi = 12.5; 
+         float a = 3.2; ;
+         float t = 6.0; ;
+         float vf,s;
+          vf = vi + (a*t);
+         s = (vi*t) + (0.5*a*t*t);
+         printf("============ KINEMATICS MOTION REPORT=========\n");
+        printf("Initial velovity (vi): \t\t\t %.2f \n",vi);
+        printf("Acceleration (a): \t\t\t %.2f\n",a);
+        printf("Time Elapsed (t): \t\t\t %.2f \n",t);
+        printf("-----------------------------------------------\n");
+        printf("calculated Final Velocity (vf): \t\t %.2f \n",vf);
+        printf("calculated Distance (s): \t\t\t %.2f \n",s );
+        printf("===============================================");
+   return 0;
+}

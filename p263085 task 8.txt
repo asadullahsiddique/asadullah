@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main() {
+ 
+      double principal = 250000.00;
+      float rate = 8.5; 
+      int time = 3; 
+float interest,totalamount,monthlyinstallment;
+      /*simple interest,Total Payable Amount,Monthly Installment*/
+
+        interest = (principal*rate*time)/100.0;
+       totalamount = principal+interest;
+      monthlyinstallment = totalamount/(time*12.0);
+       printf("=========== BANK LOAN INTEREST SUMMARY ============ \n");
+      printf("principal Amount: \t\t PKR %.2f\n",principal);
+      printf("Loan Duration: \t\t %d  year(%dmonths)\n ",time ,time * 12);
+      printf("Annual Interest Rate: t\t\t%.2f%% \n ",rate);
+      printf("----------------------------------------------\n");
+      printf("Total Accrued Interest: \t PKR%.2f \n",interest);
+      printf("Total  Payable Amount: \t PKR%.2f \n",totalamount);
+      printf("Monthly Installment: \tPKR %.2f \n ",monthlyinstallment);
+      printf("===============================================");  
+
+return 0;
+}

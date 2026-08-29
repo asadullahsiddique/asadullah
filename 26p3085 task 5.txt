@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main ()
+{
+float celsius = 37.5;
+float fahrenheit,kelvin;
+
+fahrenheit = (celsius*9/5)+32;
+kelvin = celsius = 273.15;
+printf("============TEMPERATURE CONVERSTION=============\n");
+printf("temperature in celsius : \t\t%.2fC\n",celsius);
+printf("temperature in fahrenheit:\t\t%.2fF\n",fahrenheit);
+printf("temperature in kelvin:\t\t%.2fK\n",kelvin);
+printf("===============================================\n");
+return 0;
+}

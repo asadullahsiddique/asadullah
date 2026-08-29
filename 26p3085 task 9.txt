@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main ()
+{
+double basicsalary = 85000.00;
+double HRA,MA,grosssalary,taxdeduction,netsalary;
+HRA =0.20*basicsalary;
+grosssalary = basicsalary+HRA+MA;
+taxdeduction = 0.05*grosssalary;
+netsalary = grosssalary -taxdeduction;
+printf("===================MONTHLY SALARY SLIP==============\n");
+printf("basic salary        PKR%.2lf\n",basicsalary);
+printf("house rent allowance(20%%):    PKR%.2lf\n",HRA);
+printf("medical allowance (10%%)   PKR%.2lf\n",MA);
+printf("-----------------------------------------------------\n");
+printf("Gross salary:   PKR %.2lf\n",grosssalary);
+printf("Tax deduction (5%%)      PKR%.2lf\n",taxdeduction);
+printf("-----------------------------------------------------\n");
+printf("net payable salary:     PKR%.2lf\n",netsalary);
+printf("=====================================================");
+return 0;
+}

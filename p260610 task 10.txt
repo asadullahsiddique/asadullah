@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main ()
+
+{
+     float pfmarks = 88.0;
+      int pfcredit = 3;
+     float calculusmarks = 76.5;
+    int calculuscredit = 3;
+    float physicsmarks = 82.0;
+    int physicscredit = 2;
+    float totalweightedscore;
+    int totalcredits;
+    float weightedaverage;
+    totalweightedscore = (pfmarks * pfcredit)+(calculusmarks * calculuscredit)+(physicsmarks * physicscredit);
+    totalcredits = 3+3+2;
+    weightedaverage = totalweightedscore / totalcredits;
+    printf("===================SEMRSTER ACADEMIC REPORT============\n");
+    printf("course \t\tcredit hours\t obtained marks\n");
+    printf("------------------------------------------\n");
+    printf("programing fund.       %d        %.2f\n",pfmarks,pfcredit);
+    printf("calculus               %d       %.2f\n",calculusmarks,calculuscredit);
+    printf("Applied physics      %d          %.2f\n",physicsmarks,physicscredit);
+    printf("------------------------------------------------\n");
+    printf("total credits     %d    weighted average :  %.2f\n",totalcredits,weightedaverage);
+    printf("=====================================================");
+
+return 0;
+
+
+}
